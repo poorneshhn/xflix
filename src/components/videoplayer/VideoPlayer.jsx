@@ -24,7 +24,6 @@ const VideoPlayer = (props) => {
   };
   useEffect(() => {
     setVideo(props.video);
-    console.log(video);
   }, [props.video]);
 
   return (

@@ -10,16 +10,6 @@ import {
   SEARCH_GENRES_CONTENTRATING,
 } from "./constants/URLs";
 
-const myDebounce = function (cb, delay) {
-  let timer;
-  return function () {
-    clearTimeout(timer);
-    timer = setTimeout(() => {
-      cb();
-    }, delay);
-  };
-};
-
 const appendFilterTypeToURL = (url, filterType, value) => {
   if (!Array.isArray(value)) throw new Error("Value is exprected to be array");
 
@@ -134,7 +124,7 @@ function App() {
       videoList.map((item) => {
         if (item._id === selectedVideoId) {
           setCurrentVideo(item);
-          localStorage.setItem("currentVideo", JSON.stringify(currentVideo));
+          localStorage.setItem("currentVideo", JSON.stringify(item));
         }
       });
     }
