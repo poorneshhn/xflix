@@ -1,0 +1,26 @@
+.videolist-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .videolist-container {
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 0.75rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .videolist-container {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 0.5rem;
+    row-gap: 3rem;
+  }
+}
+
+@media screen and (max-width: 552px) {
+  .videolist-container {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,41 @@
+.filtergroup-container {
+  display: flex;
+  justify-content: center;
+}
+
+.filter-ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.filter-li {
+  color: white;
+  padding: 6px 15px;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5rem;
+}
+
+.filter-li.selected {
+  background-color: white;
+  color: #586069;
+  border-radius: 50px;
+}
+
+.sort-button-filter {
+  display: flex;
+  flex-direction: column;
+}
+.dropdown-sort-container {
+  position: absolute;
+  margin-top: 3rem;
+  width: 120px;
+}

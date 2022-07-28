@@ -1,0 +1,22 @@
+.dropdown-container {
+  width: 100%;
+  background-color: var(--var-light-bgcolor);
+  color: white;
+}
+
+.dropdown-ul {
+  list-style: none;
+  padding: 0;
+}
+
+.dropdown-filter-li {
+  padding: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.dropdown-filter-li:hover {
+  background-color: var(--var-dark-bgcolor);
+}

@@ -1,0 +1,28 @@
+.x-logo {
+  color: var(--var-logo-color);
+  height: 28px;
+  width: 13px;
+
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin-right: 5px;
+}
+
+.flix-logo {
+  color: white;
+  height: 28px;
+  width: 42px;
+  font-family: Roboto;
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 28px;
+  letter-spacing: 0.05em;
+  text-align: left;
+}
+
+.logo-link {
+  text-decoration: none;
+}

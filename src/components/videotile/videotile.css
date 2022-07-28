@@ -1,0 +1,37 @@
+.videotile-container {
+  max-height: 250px;
+  display: flex;
+  flex-direction: column;
+}
+
+.video-image {
+  /* height: 153px; */
+  height: 100%;
+}
+.video-image img {
+  width: 100%;
+}
+
+.video-title,
+.video-posted {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  line-height: 16px;
+}
+.video-title {
+  font-weight: 700;
+  color: white;
+}
+
+.video-posted {
+  font-weight: 400;
+  color: #d1d5da;
+}
+
+.desc-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  padding: 0.5rem 0 0 0;
+}

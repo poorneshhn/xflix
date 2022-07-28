@@ -1,0 +1,11 @@
+.borderless-button {
+  background-color: transparent;
+  color: white;
+  outline: none;
+  border: none;
+  cursor: pointer;
+}
+
+.borderless-button:active {
+  color: #bbb;
+}

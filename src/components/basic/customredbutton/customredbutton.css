@@ -1,0 +1,17 @@
+.custom-red-button {
+  background-color: #ee1520;
+  color: white;
+  width: 100%;
+  border: none;
+  height: 36px;
+
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 15px;
+
+  cursor: pointer;
+}
+
+.custom-red-button:active {
+  background-color: #bb1520;
+}

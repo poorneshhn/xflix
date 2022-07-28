@@ -1,0 +1,22 @@
+.fileupload-container {
+  background: #4ca3fc;
+}
+
+.file-button {
+  color: white;
+  background-color: #4ca3fc;
+  height: 30px;
+  width: 115px;
+  left: 1301px;
+  top: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.file-button:active {
+  background-color: #238ef8;
+}

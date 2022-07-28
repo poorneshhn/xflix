@@ -1,0 +1,4 @@
+.layout {
+  width: min(95vw, 1368px);
+  margin: 2rem auto;
+}
