@@ -20,7 +20,7 @@ const appendFilterTypeToURL = (url, filterType, value) => {
     newUrl = newUrl + "&" + filterType + "=";
   }
 
-  value.map((item, index) => {
+  value.forEach((item, index) => {
     if (item === "All Genre") {
       item = "All";
     } else if (item === "Any age group") {
@@ -53,14 +53,12 @@ function App() {
   const [currentVideo, setCurrentVideo] = useState(
     getLocalStorageItem("currentVideo")
   );
-  const [currentSortType, setCurrentSortType] = useState("");
   const [selectedGenreFilter, setSelectedGenreFilter] = useState([]);
   const [selectedContentRatingFilter, setSelectedContentRatingFilter] =
     useState([]);
   const [searchValue, setSearchValue] = useState("");
 
   const handleSortTypeChange = async (val) => {
-    setCurrentSortType(val);
     let url = "";
     if (val === "Release Date") {
       url = `${SORT_BY}releaseDate`;

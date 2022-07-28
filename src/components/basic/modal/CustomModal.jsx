@@ -15,7 +15,7 @@ import {
 } from "../../../constants/modalConstants";
 import { Close } from "@material-ui/icons";
 import CustomSelect from "../customselect/CustomSelect";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { VIDEO_POST } from "../../../constants/URLs";
 import { axiosInstance } from "../../../axiosbase/axiosBase";
 import { formatDate } from "../../../utils/utils";
@@ -74,7 +74,6 @@ const CustomModal = (props) => {
     let dateFormatedValue = formatDate(formValues["releaseDate"]);
     formValues.releaseDate = dateFormatedValue;
     const res = await axiosInstance.post(VIDEO_POST, formValues);
-    console.log(res);
     if (res.status === 201) {
       alert("Successfully posted the video info");
     }

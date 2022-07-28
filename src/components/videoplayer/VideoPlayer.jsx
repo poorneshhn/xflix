@@ -19,8 +19,7 @@ const VideoPlayer = (props) => {
   const onLikeDislike = async (typeOfVote) => {
     let postBody =
       typeOfVote === "upVote" ? upVotePostRequestBody : downVotePostRequestBody;
-
-    const res = await axiosInstance.post(UPVOTE_DOWNVOTE_URL, postBody);
+    await axiosInstance.post(UPVOTE_DOWNVOTE_URL, postBody);
   };
   useEffect(() => {
     setVideo(props.video);
