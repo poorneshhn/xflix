@@ -9,7 +9,7 @@ const checkForValueInArray = (array, value) => {
 };
 
 const FilterGroup = (props) => {
-  const [selectedSortValue, setSelectedSortValue] = useState("");
+  const [selectedSortValue, setSelectedSortValue] = useState("Release Date");
   const [show, setShow] = useState(false);
 
   useEffect(() => {

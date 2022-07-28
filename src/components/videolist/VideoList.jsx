@@ -15,6 +15,7 @@ const VideoList = (props) => {
         videos.map((item) => {
           return (
             <Link
+              className="video-tile-link"
               style={{ textDecoration: "none" }}
               key={item._id}
               to={`/video/${item._id}`}
