@@ -58,18 +58,7 @@ const CustomModal = (props) => {
   const handleChange = (field, value) => {
     setFormValues((prev) => ({ ...prev, [field]: value }));
   };
-  // useEffect(() => {
-  //   console.log(formValues);
-  //   console.log(formatDate(formValues.releaseDate));
-  // }, [formValues]);
-  //   {
-  //     "videoLink": "youtube.com/embed/hGrRg8aoBMU",
-  //     "title": "Upskill with Crio",
-  //     "genre": "Education",
-  //     "contentRating": "7+",
-  //     "releaseDate": "12 Jan 2021",
-  //     "previewImage": "https://i.ytimg.com/vi_webp/hGrRg8aoBMU/sddefault.webp"
-  // }
+
   const handleClick = async () => {
     let dateFormatedValue = formatDate(formValues["releaseDate"]);
     formValues.releaseDate = dateFormatedValue;
